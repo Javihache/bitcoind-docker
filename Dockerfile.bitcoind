@@ -1,6 +1,6 @@
-FROM alpine:3.10 as final
-ARG VERSION=0.19.1
-ARG GLIBC_VERSION=2.29-r0
+FROM alpine:edge as final
+ARG VERSION=latest
+ARG GLIBC_VERSION=2.31
 RUN apk update && apk upgrade && apk add bitcoin sudo && \
 	mkdir -p /var/lib/bitcoin && \
 	mkdir -p /etc/bitcoin
