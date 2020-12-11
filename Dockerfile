@@ -1,7 +1,7 @@
 FROM arm32v7/alpine:edge
 ARG VERSION=0.20.1-r0
 ARG GLIBC_VERSION=2.32-r0
-RUN apk update && apk add bitcoin sudo && \
+RUN apk add bitcoin sudo && \
 	mkdir -p /var/lib/bitcoin && \
 	mkdir -p /etc/bitcoin
 
