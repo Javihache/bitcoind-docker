@@ -1,7 +1,8 @@
 ARG ARCH=arm64
+ARG DEBIANARCH=arm64v8
 ARG VERSION=0.21.0
 
-FROM $ARCH/debian:stable-slim
+FROM $DEBIANARCH/debian:stable-slim
 LABEL maintainer="Javi Hache(javi.hm@gmail.com)"
 
 ARG ARCH
