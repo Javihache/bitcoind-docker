@@ -2,7 +2,7 @@ ARG ARCH=arm32v7
 ARG VERSION=0.21.0
 
 FROM $ARCH/debian:stable-slim
-LABEL maintainer="Javi Hache(javi.hm@gmail.com"
+LABEL maintainer="Javi Hache(javi.hm@gmail.com)"
 
 ARG ARCH
 ARG VERSION
